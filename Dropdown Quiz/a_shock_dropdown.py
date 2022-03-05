@@ -1,6 +1,7 @@
 # Import module
 from tkinter import *
 import random
+import copy
 
 # Create object
 root = Tk()
@@ -13,15 +14,14 @@ correct_list = [
     "Call 999",
     "Check if the person is carrying any medication",
     "Help administer medication or, if trained, do it yourself",
-    "task 4",
-    "tsk 5",
-    "6",
-    "7"]
+    "After injection, continue to look after the person until medical help arrives",
+    "Make sure the casualty is comfortable and can breathe as best as they can",
+    ]
 
 # Button function
 def show():
     correct = 0
-    for n in range(7):
+    for n in range(len (correct_list)):
         text = clickers[n].get()
         if (text == correct_list[n]):
             correct += 1
@@ -30,24 +30,15 @@ def show():
     label.config( text =  'The number of correct answers is ' + str(correct) )
 
 # Dropdown menu options
-options =[
-	"Call 999",
-    "Check if the person is carrying any medication",
-    "Help administer medication or, if trained, do it yourself",
-    "task 4",
-    "tsk 5",
-    "6",
-    "7"
-]
+options = copy.deepcopy(correct_list)
 random.shuffle(options)
-
 
 #MY OWN CODE
 clickers = []
 drops = []
-random.shuffle(options)
 
-for n in range (7):
+print (len(correct_list))
+for n in range (len(correct_list)):
     clicked = StringVar()
     clicked.set( "Task" + str(n+1))
     
@@ -55,8 +46,6 @@ for n in range (7):
     drop.pack()
     clickers.append (clicked)
     drops.append (drop)
-
-
 
 
 
