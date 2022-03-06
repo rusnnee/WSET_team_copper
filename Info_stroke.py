@@ -27,7 +27,7 @@ def create_main_window():
     title1.pack(ipady=10)
 
     main1 = tk.Label(
-        text = "Happens as a result of blood supply being cut off to a part of the brain. \nThe consequences of this medical condition can be life-threatening, and therefore immediate medical attention is required. \n It is imperative that a person should receive treatment as soon as possible.",
+        text = "Happens as a result of blood supply being cut off to a part of the brain. \nThe consequences of this medical condition can be life-threatening, and therefore immediate medical attention is required. \n It is imperative that a person receives treatment as soon as possible.",
         fg="white",
         bg="black",
         font=Font_tuple1, 
