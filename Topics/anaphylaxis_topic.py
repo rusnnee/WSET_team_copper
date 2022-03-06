@@ -17,7 +17,7 @@ def multi():
     subprocess.call(['python', 'anaphylaxis_quiz.py'])
 
 def dropdown():
-    subprocess.call(['python', 'anaphylaxis_dropdown.py'])
+    subprocess.call(['python', 'a_shock_dropdown.py'])
 
 def exit_program(*args):
     window.destroy()
