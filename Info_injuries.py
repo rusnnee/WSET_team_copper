@@ -78,7 +78,7 @@ def create_main_window():
     subheading2.pack()
 
     main4 = tk.Label(
-        text = "Under the circumstance someone is breathing heavily: \n1. Apply pressure to the side of the wound, ensuring there is no object embedded inside until bleeding stops, \n2. Firmly bandage the wound with clean dressing. \nFor minor cuts, run under cold water and put a plaster to prevent infection of the wound.",
+        text = "Under the circumstance someone is breathing heavily: \n1. Apply pressure to the side of the wound, ensuring there is no object embedded inside until bleeding stops, \n2. Firmly bandage the wound with clean dressing. \nFor minor cuts, run under cold water and put on a plaster to prevent infection of the wound.",
         fg = "white",
         bg="black",
         font=Font_tuple1,
