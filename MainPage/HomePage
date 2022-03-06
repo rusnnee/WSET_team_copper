@@ -28,6 +28,9 @@ leftbl.place(x=183, y=210)
 def exit_program(*args):
     window.destroy()
 
+def emergency_program(*args):
+    subprocess.call(['python', 'emergency_number.py'])
+
 #create canvas and image
 emergencyCanvas = Canvas(leftFrame, width=100, height=100, bg="#F13E3E")
 #tags property allows you to bind the image in canvas to a function later
@@ -38,7 +41,7 @@ emergencyCanvas.create_oval(48,46, 52,60, outline='white', fill='white', tags='c
 emergencyCanvas.create_oval(48,62, 52,66, outline='white', fill='white', tags='click')
 
 #binds tagged image to specified function
-emergencyCanvas.tag_bind("click","<Button-1>",exit_program)
+emergencyCanvas.tag_bind("click","<Button-1>",emergency_program)
 
 emergencyCanvas.place(x=198, y=75)
 
@@ -121,27 +124,27 @@ rightbl=Label(window, text="Information Hub", fg='white', bg='black', font=('Com
 rightbl.place(x=950, y=210)
 
 def run_program1():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'final_quiz.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 def run_program2():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'burns_topic.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 def run_program3():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'stroke_topic.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 def run_program4():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'choking_topic.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 def run_program5():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'bleeding_topic.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 def run_program6():
-    subprocess.call(['python', 'fonts.py'])
+    subprocess.call(['python', 'anaphylaxis_topic.py'])
     #each new window will have its own function with a different name
     #run_program1, 2, 3 etc. or run_program_'button_name' etc.
 
@@ -154,7 +157,7 @@ button2.place(x=50, y=480)
 button3 = Button(rightFrame, text="Stroke", width=20, height=2, font=('Comic Sans MS', 14), command=run_program3)
 button3.place(x=620, y=280)
 
-button4 = Button(rightFrame, text="Chocking", width=20, height=2, font=('Comic Sans MS', 14), command=run_program4)
+button4 = Button(rightFrame, text="Choking", width=20, height=2, font=('Comic Sans MS', 14), command=run_program4)
 button4.place(x=50, y=280)
 
 button5 = Button(rightFrame, text="Injury", width=20, height=2, font=('Comic Sans MS', 14), command=run_program5)
