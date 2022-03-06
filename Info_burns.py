@@ -1,10 +1,7 @@
 #Burns
 
-from curses import window
-from logging import root
 import tkinter as tk
 from tkinter import *
-from turtle import color
 
 def create_main_window():
     window = tk.Tk()
