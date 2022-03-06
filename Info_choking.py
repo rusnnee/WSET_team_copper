@@ -44,7 +44,7 @@ def create_main_window():
     subheading1.pack()
 
     main2 = tk.Label(
-        text = "Partly blocking of the airway. Encourage them to continuously cough.",
+        text = "Partial blocking of the airway. Encourage them to continuously cough.",
         fg = "white",
         bg="black",
         font=Font_tuple1,
@@ -61,7 +61,7 @@ def create_main_window():
     subheading2.pack()
 
     main3 = tk.Label(
-        text = "This can be characteriseed by the inability to speak, breathe or swallow. Without immediate help, a person can become unconscious.\n In this case, perform back blows and the Heimlinch manouver, as described below:",
+        text = "This can be characterised by the inability to speak, breathe or swallow. Without immediate help, a person can become unconscious.\n In this case, perform back blows and the Heimlinch manouver, as described below:",
         fg = "white",
         bg="black",
         font=Font_tuple1,
