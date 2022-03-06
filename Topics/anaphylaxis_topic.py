@@ -11,13 +11,16 @@ window.geometry("1920x1080+0+24")
 
 # Button function
 def info():
-    subprocess.call(['python', 'burns_topic.py'])
+    subprocess.call(['python', 'Info_anaphylaxis.py'])
 
 def multi():
-    subprocess.call(['python', 'burns_topic.py'])
+    subprocess.call(['python', 'anaphylaxis_quiz.py'])
 
 def dropdown():
-    subprocess.call(['python', 'burns_topic.py'])
+    subprocess.call(['python', 'anaphylaxis_dropdown.py'])
+
+def exit_program(*args):
+    window.destroy()
 
 #Title label
 title = Label( window , text = "Anaphylaxis", bg = "black", fg = 'white' )
@@ -36,6 +39,9 @@ button2.pack(pady = 20)
 
 button3 = Button( window , text = "Select the Right Order Quiz" , command = dropdown, width = 30, font=('Comic Sans MS', '20') )
 button3.pack(pady = 20)
+
+button4 = Button(window, text = "BACK", command = exit_program, font=('Comic Sans MS', 14))
+button4.place(x=10, y=10)
 
 # Execute tkinter
 window.mainloop()
