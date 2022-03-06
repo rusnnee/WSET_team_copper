@@ -7,16 +7,16 @@ import copy
 # Create object 
 root = Tk()
 root.geometry( "1920x1080" )
-root.title('Anyphalactic Shock Process quiz')
+root.title('Burns Help Quiz')
 root.configure(bg='black')
 
 #Correct list
 correct_list = [
-    "Call 999",
-    "Check if the person is carrying any medication",
-    "Help administer medication or, if trained, do it yourself",
-    "After injection, continue to look after the person until medical help arrives",
-    "Make sure the casualty is comfortable and can breathe as best as they can",
+    "Call 999 uf needed",
+    "Cool the burn as quickly as possible with cool running water for at least 20 minutes",
+    "While cooling, carefully remove jewellery and clothing, unless it's attached ot skin",
+    "Cover the burn with cling film or clean dry dressing",
+    "Do not apply creams, lotions or sprays to the burn",
     ]
 
 # Button function
@@ -33,7 +33,7 @@ def show():
         label.config( text =  'Congratulations!' )
 
 #Title label
-title = Label( root , text = "How to help during Anaphylactic Shock?", bg = "black", fg = 'white' )
+title = Label( root , text = "How to help with Burns and Scalds?", bg = "black", fg = 'white' )
 title.config(font=('Comic Sans MS', '30'))
 title.pack(pady = 30)
 
