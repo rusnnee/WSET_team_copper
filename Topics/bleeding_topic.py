@@ -6,7 +6,7 @@ import subprocess
 # Create object 
 window = Tk() #Makes the window
 window.config(background = "black")
-window.title('Bleeding')
+window.title('Injuries')
 window.geometry("1920x1080+0+24")
 
 # Button function
@@ -23,7 +23,7 @@ def exit_program(*args):
     window.destroy()
 
 #Title label
-title = Label( window , text = "Bleeding", bg = "black", fg = 'white' )
+title = Label( window , text = "Injuries", bg = "black", fg = 'white' )
 title.config(font=('Comic Sans MS', '40'))
 title.pack(pady = 60)
 
